@@ -1,0 +1,19 @@
+main {
+    height: 100vh;
+    padding: 40px 0;
+    background-color: lightblue;
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+
+        .card {
+            width: calc(100% / 5 - 20px);
+            margin: 10px 10px;
+            min-height: 100px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+    }
+}
