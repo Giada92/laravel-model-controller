@@ -11,13 +11,17 @@ class MovieController extends Controller
 
         //SELECT * FROM `movies`
         $movies = Movie::all();
+        //$movies = Movie::where('title', 'LIKE', 'P%')->get();
+        /* $movies = Movie::where('vote', '<', '8')
+                        ->orderBy('title', 'ASC')
+                        ->get(); */
         //dump($movies);
+
+
 
         /* $movies = [
             "movies" => $movies
         ] */
-
-
         return view('home', compact('movies'));
     }
 }

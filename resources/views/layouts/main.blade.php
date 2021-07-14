@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Film</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -16,7 +16,7 @@
         {{-- /Header --}}
 
         {{-- Main - Film --}}
-        @include('partials.main')
+        @yield('main-film')
         {{-- /Main - Film --}}
         
     </body>
